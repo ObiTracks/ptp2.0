@@ -3,11 +3,10 @@ import './Creator.css';
 
 function Creator(){
     return(
-        <div>
+        <div className="creator">
             
         </div>
     )
-
 }
 
 export default Creator

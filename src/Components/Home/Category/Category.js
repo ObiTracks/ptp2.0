@@ -3,8 +3,8 @@ import './Category.css';
 
 function Category(){
     return(
-        <div>
-            <div></div>
+        <div className="category">
+            Category            
         </div>
     )
 

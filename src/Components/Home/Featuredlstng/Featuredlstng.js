@@ -3,8 +3,8 @@ import './Featuredlstng.css';
 
 function Featuredlstng(){
     return(
-        <div>
-            
+        <div className="lstng">
+            Featured Listing
         </div>
     )
 

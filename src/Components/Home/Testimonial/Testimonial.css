@@ -1,11 +1,8 @@
-*{
-    padding: 0;
-    margin: 0;
-    color: black;
-    box-sizing: border-box;
-}
-div{
+.testimonial{
     width: 80%;
     height: 40vh;
-    border: solid blue 2px;
+    border: solid black 3px;
+    box-sizing: border-box;
+    background: blue;
+    margin: 20px;
 }
