@@ -4,8 +4,8 @@
 }
 .App {
   text-align: center;
-  background: turquoise;
-  width: 100%;
+  background: rgb(255, 255, 255);
+  width: 100vw;
   height: auto;
   min-height: 100vh;
 }

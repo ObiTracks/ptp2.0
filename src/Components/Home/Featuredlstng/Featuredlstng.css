@@ -1,8 +1,73 @@
 .lstng{
-    width: 30vw;
-    height: 22vw;
-    border: solid black 3px;
+    width: 30%;
+    max-width: 25rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: solid black 3px; */
     box-sizing: border-box;
-    background: blue;
-    margin: 20px;
+    border-radius: 8px;
+    background: url('../../../static/realestateFillerImg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 1.5%;
+    transition: all 0.4s ease;
+}
+.lstng:hover{
+    transform: scale(1.05);
+}
+.lstng p{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+}
+
+.lstng div{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lstng div h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.lstng div p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    color: lightgrey;
+    padding: 0;
+    margin: 0;
+}
+
+/* Classes to specify characteristics
+for each bounding div containing info */
+
+.lstng .postName{
+    justify-content: center;
+    align-items: flex-end;
+    /* border: solid red 3px; */
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.76);
+    box-shadow: rgba(0, 0, 0, 0.815) 0px 0px 8px 10px;
+}
+.lstng .postName h1{
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+.lstng .listerInfo{
+    justify-content: flex-end;
+    align-items: flex-start;
 }

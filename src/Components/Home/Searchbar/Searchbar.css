@@ -1,21 +1,104 @@
 .searchbar{
     width: 70%;
-    height: 300px;
+    height: 85px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     /* border: solid black 2px; */
+    box-sizing: border-box;
     border-radius: 90px;
-    background: rgb(248, 247, 242);
+    background: rgb(255, 255, 255);
+    padding: 1.5% 2% 1.5% 4%;
 }
-.searchbox, .ctgry, .lctn{
-    height: 100px;
-    border: solid black 2px;
+.searchbox, .dropdown{
+    height: 100%;
+    /* border: solid black 2px; */
 }
 .searchbox{
-    width: 65%;
+    width: 60%;
+    border-bottom: solid rgb(228, 228, 228) 2px;
+    margin-right: 4%;
+    transition: all 0.3 ease;
 }
-.ctgry, .lctn{
-    width: 15%;
+.searchbox:hover{
+    cursor: pointer;
+    border-bottom: solid rgb(173, 173, 173) 2px;
+}
+.dropdown{
+    width: 20%;
+    border-left: solid rgb(219, 219, 219) 2px;
+    overflow: visible;
+}
+.searchbar
+nav button {
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 400;
+    color: rgb(148, 148, 148);
+    border-style: none;
+    background: white;
+    transition: all 0.3s ease;
+}
+.searchbar
+nav button:hover {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(66, 61, 51);
+    cursor: pointer;
+}
+.searchbar
+nav, nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.searchbar
+nav ul {
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    /* min-height: 50%; */
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 400;
+
+    border: solid rgb(255, 232, 21) 2px;
+    border-style: none;
+    border-radius: 0 0 10px 10px;
+    overflow: visible;
+    background: white;
+    pointer-events: none;
+    list-style: none;
+    opacity: 0;
+    transition: all 0.08s ease;
+    transform: translateY(-10px);
+}
+.searchbar
+nav ul li{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid white 1px; */
+}
+.searchbar
+nav ul li a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+    border: solid white 1px;
+}
+.searchbar
+nav button:focus + ul, button{
+    opacity: 1;
+    pointer-events: all;
+    border: none;
+    outline:none;
+    transform: translateY(0px);
 }

@@ -4,7 +4,7 @@ import './Category.css';
 function Category(){
     return(
         <div className="category">
-            Category            
+            Category
         </div>
     )
 

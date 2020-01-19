@@ -1,8 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Coustard|Palanquin|Passion+One|Permanent+Marker&display=swap');
+
 .testimonial{
     width: 80%;
     height: 40vh;
-    border: solid black 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid rgba(0, 0, 0, 0.247) 1px;
+    border-radius: 4px;
     box-sizing: border-box;
-    background: blue;
     margin: 20px;
+    overflow: hidden;
+    transition: all 0.08s ease-in-out;
+}
+
+.testimonial img{
+    width: 40%;
+    height: 100%;
+}
+.testimonial .content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+}
+
+.testimonial:hover{
+    transform: scale(1.005);
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.274) 0 0 15px;
+}
+.testimonial .content h1{
+    width: 80%;
+    font-family: 'Permanent Marker',sans-serif;
+    font-size: 5rem;
+    line-height: 60px;
+    /* border: solid red 2px; */
+    margin: 0;
+    padding: 0;
+}
+.testimonial .content #scndQuote{
+    text-align: right;    
+}
+.testimonial .content p{
+    width: 70%;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.testimonial .content .author{
+    width: 60%;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: row;
+    border: solid red 2px;
 }
